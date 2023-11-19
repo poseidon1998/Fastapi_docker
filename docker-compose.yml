@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  fastapi:
+    container_name: fastapi
+    ports:
+      - "90:90"
+    volumes:
+      - /home/hbp/code/fastApi:/apps
+    build:
+      context: .
+      dockerfile: Dockerfile
